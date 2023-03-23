@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html"> INICIO </a>
+                </li>
+                <li>
+                    <a href="./comunes.html"> COMUNES </a>
+                </li>
+                <li>
+                    <a href="./cultivo.html"> CULTIVO </a>
+                </li>
+                <li>
+                    <a href="./historia.html"> HISTORIA </a>
+                </li>
+                <li>
+                    <a href="./importantes.html"> IMPORTANTES </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> 
+
+<!--contenedor de flexbox-->
+    <div class="flex-container-cultivo">
+    <h1 class="primero"> Cultivo y propagación </h1>
+
+    <h2 class="titlesComunes"> Semilla </h2>
+    <section class="ind">
+        <p>
+            Ejemplos: Ginkgo biloba, Nogal, Borraja, Bauhinia... (plantas herbáceas)
+        </p>
+    </section>
+
+    <h3 class="titlesComunes"> Esqueje </h3>
+        <section class="ind">
+            <p>
+                Consiste en cortar una parte viva de la planta (tallo, rama, brote) para luego injertarlo en un recpipente para que se pueda desarrolar para poder transplantarlo a una maceta definitiva.
+            </p>
+            <p>
+                Ejemplos: Poleo, Sauce, Ajedrea, Cedrón... 
+            </p>
+        </section>
+
+    <h4 class="titlesComunes"> División de mata </h4>
+        <section class="ind">
+            <p>
+                Se divide a la planta en dos trozos (con muchas raíces) para luego plantarlas individualmente y regar de forma abundante.
+            </p>
+            <p>
+                Ejemplos: Pasto limón, Menta, Malta...
+            </p>
+        </section>
+
+    <h5 class="titlesComunes"> Acodo aéreo </h5>
+        <section class="ind">
+            <p>
+                Consiste en que un tallo o rama desarrolle nuevas raíces sin estar en contacto con la tierra.
+            </p>
+            <p>
+                Se debe elegir una rama y hacerle un corte no tan profundo ya que no se debe aisalrla del resto de la planta. Luego se debe cubrir todo en tierra previamente humedecida y agregarle musgos o cortes de pasto para que mantengas la humedad  (si es conveniente se pueden agregar hormonas de enrazamiento para acelerar el proceso). Finalmente se debe envolver todo en una bolsa de plástico NEGRA para evitar el rayo directo del sol.
+            </p>
+            <p>
+                Ejemplos: Laurel, Cedrón, Burrito, Níspero...
+            </p>
+        </section>
+    </div>
+        </div>
+
+<!-- estructura de bootstrap-->
+
+        <div class="container-fluid">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../imagenes/acodoaereo.jpg" class="d-block w-100" alt= "corte superficial de una rama en crecimiento">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/acododos.jpg" class="d-block w-100" alt="tierra sobre el corte de la rama">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/acodotres.jpg" class="d-block w-100" alt="bolsa de plástico negra recubriendo el resultado">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    </main> 
+
+    <footer>
+        <article class="redes">
+            <img src="../imagenes/facebook.svg" alt="icono de facebook">
+            <a target="_blank" href="https://facebook.com"> Facebook </a>
+
+            <img src="../imagenes/twitter.svg" alt="icono de twitter">
+            <a target="_blank" href="https://twitter.com"> Twitter </a>
+        </article>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
