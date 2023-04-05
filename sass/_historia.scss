@@ -3,12 +3,15 @@
 .flexContainer {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
     align-items: stretch;
     align-content: stretch;
+    border: 4px solid black;
+    padding: 10px;
+    margin: 50px;
     .caja1 {
-        display: block;
+        display: flex;
         flex-grow: 0;
         flex-shrink: 1;
         flex-basis: auto;
@@ -16,7 +19,7 @@
         order: 0;
     }
         .caja2 {
-        display: block;
+        display: flex;
         flex-grow: 0;
         flex-shrink: 1;
         flex-basis: auto;
@@ -24,7 +27,7 @@
         order: 0;
     }
         .caja3 {
-        display: block;
+        display: flex;
         flex-grow: 0;
         flex-shrink: 1;
         flex-basis: auto;
