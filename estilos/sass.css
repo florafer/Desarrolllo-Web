@@ -1,4 +1,6 @@
-/*  =========   Mixins para Comunes =========  */
+@charset "UTF-8";
+/*  =========   Mixin para HISTORIA =========  */
+/* el @include se agregó en las líneas 25 y 28 de historia  */
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:ital@0;1&family=Raleway&display=swap");
 * {
   margin: 0;
@@ -100,11 +102,15 @@ body {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
-  align-items: stretch;
+  align-items: center;
   align-content: stretch;
   border: 4px solid black;
   padding: 10px;
   margin: 50px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  overflow: auto;
+  height: 40vh;
 }
 .flexContainer .caja1 {
   display: flex;
@@ -138,23 +144,15 @@ body {
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 5px;
   grid-row-gap: 0px;
-}
-.gridHistoria .grid-item1 {
-  grid-area: 1/1/3/2;
-}
-.gridHistoria .grid-item2 {
-  grid-area: 1/2/3/3;
-}
-.gridHistoria .grid-item3 {
-  grid-area: 1/3/3/4;
+  margin: 10px;
+  padding: 20px;
 }
 
 /* h1 con gradiente y animado */
 .animatedText {
-  font-size: 11rem;
+  font-size: 3rem;
   background: linear-gradient(90deg, rgb(32, 61, 32), rgb(205, 205, 134), rgb(32, 61, 32)) 0 0/400% 100%;
   animation: move-bg 4s infinite linear;
-  color: transparent;
 }
 
 @keyframes move-bg {
@@ -169,6 +167,8 @@ body {
   justify-content: flex-start;
   align-items: stretch;
   align-content: stretch;
+  margin: 10px;
+  padding: 10px;
 }
 .flex-container-importantes .flex-items {
   display: block;
@@ -177,6 +177,7 @@ body {
   flex-basis: auto;
   align-self: auto;
   order: 0;
+  animation: fadeIn 1s ease;
 }
 
 .flex-items {
@@ -193,7 +194,6 @@ body {
     filter: brightness(2) blur(10px);
   }
 }
-/* PONER FLEX ITEMS EN MIXIN*/
 /* ========= CSS BOOTSTRAP en CULTIVOS ========= */
 .container-fluid {
   margin: 10px;
@@ -242,7 +242,6 @@ body {
     margin: 10px;
   }
   .container-fluid {
-    max-height: 900px;
     margin: 5px;
     background-color: #dcf9e4;
   }
@@ -252,58 +251,17 @@ body {
   }
 }
 /* ========= RESPONSIVE de  HISTORIA ========= */
-@media screen and (min-width: 500px) {
-  .flexContainer {
-    height: 800px;
-  }
+@media screen and (max-width: 500px) {
   .caja {
     height: auto;
-    width: 100%;
-  }
-  .gridHistoria {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    padding: 5px;
-    margin: 5px;
-    row-gap: 5px;
-    height: 800px;
-    width: 100%;
-  }
-  .historiaDos {
-    width: 100%;
-  }
-  .historiaTres {
-    width: 100%;
-  }
-  .historiaCuatro {
     width: 100%;
   }
 }
 @media screen and (min-width: 1024px) {
   .flexContainer {
-    height: 200px;
     justify-content: center;
   }
   .flexContainer .caja {
     padding: 10px;
-  }
-  .gridHistoria {
-    display: grid;
-    margin: 50px;
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
-  .historiaDos {
-    grid-template-columns: 100%;
-  }
-  .historiaTres {
-    grid-template-columns: 100%;
-  }
-  .historiaCuatro {
-    grid-template-columns: 100%;
   }
 }/*# sourceMappingURL=sass.css.map */

@@ -1,1 +1,11 @@
-/*  =========   Mixins para Comunes =========  */
+/*  =========   Mixin para HISTORIA =========  */
+@mixin caja {
+        display: flex;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: auto;
+        align-self: auto;
+        order: 0;
+}
+
+/* el @include se agregó en las líneas 25 y 28 de historia  */

@@ -43,7 +43,6 @@
         margin: 10px
     }
     .container-fluid {
-        max-height: 900px;
         margin: 5px;
         background-color: #dcf9e4;
     }
@@ -56,59 +55,18 @@
 
 /* ========= RESPONSIVE de  HISTORIA ========= */
 
-@media screen and (min-width:500px) {
-    .flexContainer {
-        height: 800px;
-    }
+@media screen and (max-width:500px) {
     .caja {
         height: auto;
-        width: 100%;
-    }
-    .gridHistoria {
-        grid-template-columns: repeat(1, 1fr); 
-        grid-template-rows: repeat(3, 1fr); 
-        grid-column-gap: 0px;
-        grid-row-gap: 0px; 
-        padding: 5px;
-        margin: 5px;
-        row-gap: 5px;
-        height: 800px;
-        width: 100%;
-    }
-    .historiaDos {
-        width: 100%;
-    }
-    .historiaTres {
-        width: 100%;
-    }
-    .historiaCuatro {
         width: 100%;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .flexContainer {
-        height: 200px;
         justify-content: center;
         .caja {
             padding: 10px;
         }
-    }
-    .gridHistoria {
-        display: grid;
-        margin: 50px;
-        grid-column-gap: 50px;
-        grid-row-gap: 50px;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-    }
-    .historiaDos {
-        grid-template-columns: 100%;
-    }
-    .historiaTres {
-        grid-template-columns: 100%;
-    }
-    .historiaCuatro {
-        grid-template-columns: 100%;
     }
 }

@@ -1,10 +1,9 @@
 /* h1 con gradiente y animado */
 
 .animatedText {
-    font-size: 11rem;
+    font-size: 3rem;
     background: linear-gradient(90deg, rgb(32, 61, 32), rgb(205, 205, 134), rgb(32, 61, 32)) 0 0 / 400% 100%;
     animation: move-bg 4s infinite linear;
-    color: transparent;
 }
 
 @keyframes move-bg {
@@ -13,7 +12,6 @@
     }
 }
 
-
 .flex-container-importantes {
         display: flex;
         flex-direction: row;
@@ -21,6 +19,8 @@
         justify-content: flex-start;
         align-items: stretch;
         align-content: stretch;
+        margin: 10px;
+        padding: 10px;
         .flex-items {
             display: block;
             flex-grow: 0;
@@ -28,6 +28,7 @@
             flex-basis: auto;
             align-self: auto;
             order: 0;
+            animation: fadeIn 1s ease;
         }
 }
 
@@ -44,5 +45,3 @@
     filter: brightness(2) blur(10px);
     }
 }
-
-/* PONER FLEX ITEMS EN MIXIN*/
