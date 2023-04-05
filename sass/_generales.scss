@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:ital@0;1&family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ========= CSS NavBar ========= */
+
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    .nav-link {
+        margin: 0 95px 0 95px;
+    }
+}
