@@ -56,10 +56,14 @@
 /* ========= RESPONSIVE de  HISTORIA ========= */
 
 @media screen and (max-width:500px) {
+    .gridHistoria {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
     .caja {
         height: auto;
         width: 100%;
     }
+}
 }
 
 @media screen and (min-width: 1024px) {

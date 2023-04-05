@@ -141,7 +141,7 @@ body {
 .gridHistoria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 1fr;
   grid-column-gap: 5px;
   grid-row-gap: 0px;
   margin: 10px;
@@ -252,7 +252,11 @@ body {
 }
 /* ========= RESPONSIVE de  HISTORIA ========= */
 @media screen and (max-width: 500px) {
-  .caja {
+  .gridHistoria {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .gridHistoria .caja {
     height: auto;
     width: 100%;
   }
