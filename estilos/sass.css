@@ -262,12 +262,11 @@ body {
     align-items: center;
     align-content: space-around;
   }
+  .gridHistoria {
+    width: 80%;
+    grid-template-columns: 1fr;
+  }
 }
-.gridHistoria {
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-}
-
 @media screen and (min-width: 1024px) {
   .flexContainer {
     justify-content: center;
