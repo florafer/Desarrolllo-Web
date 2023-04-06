@@ -119,6 +119,7 @@ body {
   flex-basis: auto;
   align-self: auto;
   order: 0;
+  border: 2px solid black;
 }
 .flexContainer .caja2 {
   display: flex;
@@ -127,6 +128,7 @@ body {
   flex-basis: auto;
   align-self: auto;
   order: 0;
+  border: 2px solid black;
 }
 .flexContainer .caja3 {
   display: flex;
@@ -135,6 +137,7 @@ body {
   flex-basis: auto;
   align-self: auto;
   order: 0;
+  border: 2px solid black;
 }
 
 /* ========= GRIDS de Historia ========= */
@@ -252,15 +255,19 @@ body {
 }
 /* ========= RESPONSIVE de  HISTORIA ========= */
 @media screen and (max-width: 500px) {
-  .gridHistoria {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-  }
-  .gridHistoria .caja {
-    height: auto;
-    width: 100%;
+  .flexContainer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
   }
 }
+.gridHistoria {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
 @media screen and (min-width: 1024px) {
   .flexContainer {
     justify-content: center;

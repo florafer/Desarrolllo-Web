@@ -20,6 +20,7 @@
         flex-basis: auto;
         align-self: auto;
         order: 0;
+        border: 2px solid black;
     }
         .caja2 {
             @include caja; 
