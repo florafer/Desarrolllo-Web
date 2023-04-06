@@ -2,5 +2,9 @@
 
 .container-fluid {
     margin:10px ;
-    height: 800px;
+    .carousel-item {
+        max-height: 600px;
+        width: 100%;
+        margin: 5px;
+    }
 }

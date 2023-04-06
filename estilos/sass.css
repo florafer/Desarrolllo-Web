@@ -36,6 +36,7 @@
   flex-wrap: nowrap;
   overflow: hidden;
   justify-content: center;
+  align-content: center;
   border: 5px solid white;
   margin: 5px;
   padding: 10px;
@@ -154,7 +155,7 @@ body {
 /* h1 con gradiente y animado */
 .animatedText {
   font-size: 3rem;
-  background: linear-gradient(90deg, rgb(32, 61, 32), rgb(205, 205, 134), rgb(32, 61, 32)) 0 0/400% 100%;
+  background: linear-gradient(90deg, rgb(78, 103, 78), rgb(205, 205, 134), rgb(78, 103, 78)) 0 0/400% 100%;
   animation: move-bg 4s infinite linear;
 }
 
@@ -200,7 +201,11 @@ body {
 /* ========= CSS BOOTSTRAP en CULTIVOS ========= */
 .container-fluid {
   margin: 10px;
-  height: 800px;
+}
+.container-fluid .carousel-item {
+  max-height: 600px;
+  width: 100%;
+  margin: 5px;
 }
 
 /* ========= RESPONSIVE en CULTIVOS ========= */
