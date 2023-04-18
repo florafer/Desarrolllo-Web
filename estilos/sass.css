@@ -343,8 +343,7 @@ body {
     font-size: 30px;
     flex-direction: column;
   }
-  .animatedText .flex-container-importantes {
+  .flex-container-importantes {
     flex-direction: column;
-    flex-shrink: 0;
   }
 }/*# sourceMappingURL=sass.css.map */
