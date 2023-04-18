@@ -29,6 +29,11 @@
   text-transform: none;
   color: rgb(10, 9, 9);
 }
+.ind .parrafo {
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 .flex-container-index {
   display: flex;
@@ -97,6 +102,12 @@ body {
   word-spacing: 5px;
 }
 
+.parrafo {
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 /*  ========= Flexbox de Historia ========= */
 .flexContainer {
   display: flex;
@@ -154,7 +165,6 @@ body {
 
 /* h1 con gradiente y animado */
 .animatedText {
-  font-size: 3rem;
   background: linear-gradient(90deg, rgb(78, 103, 78), rgb(205, 205, 134), rgb(78, 103, 78)) 0 0/400% 100%;
   animation: move-bg 4s infinite linear;
 }
@@ -185,7 +195,7 @@ body {
 }
 
 .flex-items {
-  animation: fadeIn 1s ease;
+  animation: fadeIn 0.8s ease;
 }
 
 @keyframes fadeIn {
@@ -206,6 +216,13 @@ body {
   max-height: 600px;
   width: 100%;
   margin: 5px;
+}
+
+/* ========= Clase "parrafo" para modificar el contenido ========= */
+.parrafo {
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 /* ========= RESPONSIVE en CULTIVOS ========= */

@@ -23,36 +23,38 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-success">
-            <!--Nombro a la class con BEM para diferenciarla del bootstrap de cultivos-->
-                        <div class="container__fluid">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="navbarNav">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link text-white" aria-current="page" href="../index.html"> INICIO </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-white" href="./comunes.html"> COMUNES </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-white" href="./cultivo.html"> CULTIVO </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-white" href="./historia.html"> HISTORIA </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-white" href="./importantes.html"> IMPORTANTES </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
+<!--Nombro a la class con BEM para diferenciarla del bootstrap de cultivos-->
+            <div class="container__fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="../index.html"> INICIO </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./comunes.html"> COMUNES </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./cultivo.html"> CULTIVO </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./historia.html"> HISTORIA </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./importantes.html"> IMPORTANTES </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
+<div class="parrafo"> <!-- aplico div hasta ln 134 col 13 -->
+
         <section class="primero">
             <h1> Algunos ejemplos de plantas naturalizadas y/o nativas de Argentina </h1>
         </section>
@@ -83,7 +85,7 @@
 
         <h3 class="titlesComunes"> Malva </h3>
 
-    <div class="textComunes"> 
+    <div class="textComunes parrafo"> 
         <section>
             <ul>
                 <li>
@@ -107,7 +109,7 @@
 
         <h4 class="titlesComunes"> Manzanilla </h4>
 
-    <div class="textComunes">
+    <div class="textComunes parrafo">
         <section>
             <ul>
                 <li>
@@ -129,16 +131,18 @@
         </section>
     </div>
 
+</div>
+
     </main>
 
     <footer>
-        <article class="redes">
+        <div class="redes">
             <img src="../imagenes/facebook.svg" alt="icono de facebook">
             <a target="_blank" href="https://facebook.com"> Facebook </a>
 
             <img src="../imagenes/twitter.svg" alt="icono de twitter">
             <a target="_blank" href="https://twitter.com"> Twitter </a>
-        </article>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
