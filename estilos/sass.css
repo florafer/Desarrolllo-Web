@@ -17,6 +17,9 @@
 .navbar-nav .nav-link {
   margin: 0 95px 0 95px;
 }
+.navbar-nav .nav-link .page nav-link:hover {
+  color: aquamarine;
+}
 
 .ind {
   font-family: "Poppins", sans-serif;
@@ -180,11 +183,10 @@ body {
 /* ========= CSS BOOTSTRAP en CULTIVOS ========= */
 .container-fluid {
   margin: 10px;
+  padding: 5px;
 }
 .container-fluid .carousel-item {
-  max-height: 600px;
   width: 100%;
-  margin: 5px;
 }
 
 /* ========= Clase "parrafo" para modificar el contenido ========= */
@@ -223,6 +225,17 @@ body {
     list-style: none;
   }
 }
+/* ========= RESPONSIVE en FOOTER ========= */
+@media screen and (max-width: 320px) {
+  .a {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .redes {
+    margin: 10px;
+  }
+}
 /* ========= RESPONSIVE en INDEX ========= */
 @media screen and (max-width: 320px) {
   .parrafo {
@@ -235,6 +248,17 @@ body {
 @media screen and (max-width: 576px) {
   .flex-container-index {
     flex-direction: column;
+  }
+}
+/* ========= RESPONSIVE en COMUNES ========= */
+@media screen and (max-width: 320px) {
+  .tituloComunes {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .tituloComunes {
+    font-size: 28px;
   }
 }
 /* ========= RESPONSIVE en CULTIVOS ========= */
@@ -318,5 +342,6 @@ body {
   }
   .animatedText .flex-items {
     display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=sass.css.map */
