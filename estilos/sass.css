@@ -222,6 +222,15 @@ body {
     list-style: none;
   }
 }
+@media screen and (max-width: 1024px) {
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+}
 /* ========= RESPONSIVE en FOOTER ========= */
 @media screen and (max-width: 320px) {
   .a {
@@ -231,6 +240,8 @@ body {
 @media screen and (max-width: 576px) {
   .a {
     padding: 0;
+    width: auto;
+    height: auto;
   }
 }
 @media screen and (max-width: 768px) {

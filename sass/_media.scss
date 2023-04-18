@@ -21,6 +21,12 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .navbar-nav {
+        @include nav;
+    }
+}
+
 /* ========= RESPONSIVE en FOOTER ========= */
 @media screen and (max-width:320px) {
     .a {
@@ -31,6 +37,8 @@
 @media screen and (max-width:576px) {
     .a {
         padding: 0;
+        width: auto;
+        height: auto;
     }
 }
 
