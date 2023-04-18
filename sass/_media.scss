@@ -24,7 +24,13 @@
 /* ========= RESPONSIVE en FOOTER ========= */
 @media screen and (max-width:320px) {
     .a {
-            padding: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .a {
+        padding: 0;
     }
 }
 
@@ -99,7 +105,7 @@
     }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1400px) {
     .flex-container-cultivo {
         display: flex;
         flex-direction: column;
@@ -108,6 +114,8 @@
     }
     .container-fluid {
         margin: 5px;
+        padding: 5px;
+
         background-color: #dcf9e4;
     }
     .footer {
@@ -147,9 +155,9 @@
     .animatedText {
         font-size: 30px;
         flex-direction: column;
-        .flex-items {
-            display: flex;
+        .flex-container-importantes {
             flex-direction: column;
+            flex-shrink: 0;
         }
     }
 }

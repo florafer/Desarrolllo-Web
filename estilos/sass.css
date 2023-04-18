@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*  =========   Mixin para HISTORIA =========  */
-/* el @include se agregó en las líneas 25 y 28 de historia  */
+/* el @include se agregó en las línea 4 historia.scss  */
+/* el @include se agregó en las líneas 14 y 20 de media.scss - resposive de NavBar */
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:ital@0;1&family=Raleway&display=swap");
 * {
   margin: 0;
@@ -16,9 +17,6 @@
 }
 .navbar-nav .nav-link {
   margin: 0 95px 0 95px;
-}
-.navbar-nav .nav-link .page nav-link:hover {
-  color: aquamarine;
 }
 
 .ind {
@@ -73,6 +71,10 @@
   text-decoration: none;
   color: aliceblue;
   padding: 20px;
+}
+
+a:hover {
+  color: rgb(111, 141, 98);
 }
 
 /* ========= Css de comunes.html ========= */
@@ -157,17 +159,12 @@ body {
   padding: 10px;
 }
 .flex-container-importantes .flex-items {
-  display: block;
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
   align-self: auto;
   order: 0;
   animation: fadeIn 1s ease;
-}
-
-.flex-items {
-  animation: fadeIn 0.8s ease;
 }
 
 @keyframes fadeIn {
@@ -227,6 +224,11 @@ body {
 }
 /* ========= RESPONSIVE en FOOTER ========= */
 @media screen and (max-width: 320px) {
+  .a {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 576px) {
   .a {
     padding: 0;
   }
@@ -295,7 +297,7 @@ body {
     margin: 5px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1400px) {
   .flex-container-cultivo {
     display: flex;
     flex-direction: column;
@@ -304,6 +306,7 @@ body {
   }
   .container-fluid {
     margin: 5px;
+    padding: 5px;
     background-color: #dcf9e4;
   }
   .footer {
@@ -340,8 +343,8 @@ body {
     font-size: 30px;
     flex-direction: column;
   }
-  .animatedText .flex-items {
-    display: flex;
+  .animatedText .flex-container-importantes {
     flex-direction: column;
+    flex-shrink: 0;
   }
 }/*# sourceMappingURL=sass.css.map */
