@@ -1,3 +1,43 @@
+/* ========= RESPONSIVE en NAVBAR ========= */
+@media screen and (max-width: 320px){
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .navbar-nav {  
+    @include nav;
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        @include nav;
+    }
+}
+
+/* ========= RESPONSIVE en INDEX ========= */
+@media screen and (max-width: 320px) {
+    .parrafo {
+        margin: 15px;
+    }
+    .flex-container-index {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .flex-container-index {
+    flex-direction: column;
+    }
+}
+
+
 /* ========= RESPONSIVE en CULTIVOS ========= */
 
 @media screen and (min-width: 500px) {
@@ -55,25 +95,39 @@
 
 /* ========= RESPONSIVE de  HISTORIA ========= */
 
-@media screen and (max-width:500px) {
-    .flexContainer {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
-        align-content: space-around;
-    }
+@media screen and (max-width:320px) {
     .gridHistoria {
         width: 80%;
         grid-template-columns: 1fr;
     }
 }
 
-@media screen and (min-width: 1024px) {
-    .flexContainer {
+@media screen and (max-width: 576px) {
+    .gridHistoria {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .gridHistoria {
+        grid-template-columns: 1fr;
         justify-content: center;
-        .caja {
-            padding: 10px;
+        align-items: center;
+        align-self: center;
+    }
+    .flex-container-historia {
+        margin-top: 10px;
+    }
+}
+
+/* ========= RESPONSIVE de IMPORTANTES ========= */
+
+@media screen and (max-width: 320px) {
+    .animatedText {
+        font-size: 30px;
+        flex-direction: column;
+        .flex-items {
+            display: flex;
         }
     }
 }
