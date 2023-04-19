@@ -275,6 +275,11 @@ body {
   }
 }
 /* ========= RESPONSIVE en CULTIVOS ========= */
+@media screen and (max-width: 320px) {
+  .primero {
+    font-size: 20px;
+  }
+}
 @media screen and (min-width: 500px) {
   .flex-container-cultivo {
     margin: 0px;
@@ -331,6 +336,9 @@ body {
     width: 80%;
     grid-template-columns: 1fr;
   }
+  .primero {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 576px) {
   .gridHistoria {
@@ -354,6 +362,21 @@ body {
     font-size: 30px;
     flex-direction: column;
   }
+  .flex-container-importantes {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 576px) {
+  .flex-container-importantes {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .flex-container-importantes {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1024px) {
   .flex-container-importantes {
     flex-direction: column;
   }

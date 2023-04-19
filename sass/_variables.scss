@@ -21,3 +21,7 @@
 }
 
 /* el @include se agregó en las líneas 14 y 20 de media.scss - resposive de NavBar */
+
+@mixin parrafo {
+        font-size: 20px;
+}

@@ -67,7 +67,7 @@
 /* ========= RESPONSIVE en COMUNES ========= */
 @media screen and (max-width:320px) {
     .tituloComunes {
-        font-size: 20px;
+        @include parrafo;
     }
 }
 
@@ -78,6 +78,12 @@
 }
 
 /* ========= RESPONSIVE en CULTIVOS ========= */
+@media screen and (max-width: 320px) {
+    .primero {
+        @include parrafo;
+    } 
+}
+
 @media screen and (min-width: 500px) {
     .flex-container-cultivo {
         margin: 0px;
@@ -138,6 +144,9 @@
         width: 80%;
         grid-template-columns: 1fr;
     }
+    .primero {
+        @include parrafo;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -164,6 +173,24 @@
         font-size: 30px;
         flex-direction: column;
     }
+    .flex-container-importantes {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .flex-container-importantes {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-container-importantes {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1024px) {
     .flex-container-importantes {
         flex-direction: column;
     }
