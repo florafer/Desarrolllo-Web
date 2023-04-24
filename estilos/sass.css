@@ -199,6 +199,7 @@ body {
   }
   .navbar-nav {
     padding: 20px;
+    flex-direction: column;
   }
   .redes {
     margin-top: 20px;
@@ -280,6 +281,7 @@ body {
 @media screen and (min-width: 992px) {
   .navbar {
     justify-content: space-around;
+    flex-direction: row;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
     margin: 0 50px;

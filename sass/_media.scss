@@ -13,6 +13,7 @@
     }
     .navbar-nav{
         padding: 20px;
+        flex-direction: column;
     }
 
 
@@ -129,6 +130,7 @@
     //NAVBAR
     .navbar{
         justify-content: space-around;
+        flex-direction: row;
     }
     .navbar-expand-lg .navbar-nav .nav-link {
         margin: 0 50px;
