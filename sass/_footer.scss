@@ -1,22 +1,21 @@
-.redes {
+.redes{
     display: flex;
+    flex-wrap: wrap;
     color: rgb(12,13,13);
-    padding: 50px;
     background-color: rgb(54,114,90);
-    margin: 20px;
-    .linkRedes {
+    justify-content: center;
+    .linkRedes{
+        padding: 10px 0px;
         display: flex;
         width: 200px;
         align-items: center;
         justify-content: center;
-        a {
+        a{
             text-decoration: none;
             color: aliceblue;
-            padding: 20px;
+            &:hover {
+                color: rgb(111,141,98);
             }
         }
     }
-
-    a:hover {
-        color: rgb(111, 141, 98);
-        }
+}

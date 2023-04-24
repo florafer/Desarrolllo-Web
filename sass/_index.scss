@@ -17,20 +17,17 @@
 
 .flex-container-index {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     overflow: hidden;
     justify-content: center;
-    align-content: center;
     border: 5px solid white;
     margin: 5px;
     padding: 10px;
     width: auto;
-    max-height: 750px;
-    flex-grow: 1;
     gap: 10px;
     img {
         width: 100%;
+        height: 100%;
         object-fit: contain;
     }
 }

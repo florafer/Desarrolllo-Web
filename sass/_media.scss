@@ -1,210 +1,161 @@
-/* ========= RESPONSIVE en NAVBAR ========= */
 @media screen and (min-width: 320px){
-    .navbar-nav {
-    @include nav;
+    h1{
+        font-size: 25px;
     }
-}
 
-@media screen and (min-width: 1400px) {
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding: 0 100px;
+    //INDEX
+    //NAVBAR
+    .navbar{
+        margin: 0px 0px;
     }
-}
-
-@media screen and (max-width: 1280px) {
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding: 0 80px;
+    .navbar-light .navbar-toggler{
+        margin: 0px 20px;
     }
-}
-
-@media screen and (max-width: 1024px) {
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding: 0 60px;
+    .navbar-nav{
+        padding: 20px;
     }
-}
 
-/* ========= RESPONSIVE en FOOTER ========= */
-@media screen and (max-width:320px) {
-    a {
-        padding: 0;
+
+    //FOOTER
+    .redes{
+        margin-top: 20px;
+    }
+
+
+    //COMUNES
+    .primero{
+        font-size: 25px;
         text-align: center;
+        .tituloComunes{
+            font-size: 25px;
+        }
     }
-}
 
-@media screen and (max-width:576px) {
-    a {
-        padding: 0;
+
+    //CULTIVOS
+    .container-fluid-carousel{
+        margin: 0px 0px;
+        width: 100%;
+        .carousel{
+            width: 100%;
+        }
+    }
+
+
+    //HISTORIA
+    section .tituloComunes{
+        font-size: 25px;
+    }
+    .flex-container-historia{
+        padding: 10px;
+    }
+    .gridHistoria{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        .grid-item1, .grid-item2, .grid-item3{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+
+    //IMPORTANTES
+    .primero{
+        .animatedText{
+            padding: 10px;
+            font-size: 25px;
+        }
+    }
+    .flex-container-importantes{
+        display: flex;
+        flex-wrap: wrap;
         width: auto;
-        height: auto;
-    }
-}
-
-/* @media screen and (max-width:768px) {
-    .redes {
-        margin: 10px;
         justify-content: center;
+        .flex-items{
+            width: 90%;
+            padding: 10px;
+        }
     }
-} */ 
-
-@media screen and (min-width: 1280px) {
-    .redes {
-        justify-content: center;
-        a {
-            text-align: center;
-            font-size: 20px;
+    .textComunes{
+        div{
+            ul{
+                li{
+                    padding-bottom: 10px;
+                }
+            }
         }
     }
 }
 
-/* ========= RESPONSIVE en INDEX ========= */
-@media screen and (max-width: 320px) {
-    .parrafo {
-        margin: 15px;
-        padding: 0%;
-        width: auto;
+@media screen and (min-width: 768px){
+    //INDEX
+    .ind{
+        .parrafo{
+            margin: 20px 50px;
+        }
     }
-    .flex-container-index {
-        flex-direction: column;
+
+    //HISTORIA
+    .gridHistoria{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        .grid-item1, .grid-item2, .grid-item3{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    .primero{
+        .tituloComunes{
+            font-size: 40px;
+        }
+    }
+    p{
+        font-size: 20px;
     }
 }
 
-@media screen and (max-width: 576px) {
-    .flex-container-index {
-    flex-direction: column;
+@media screen and (min-width: 992px){
+    //NAVBAR
+    .navbar{
+        justify-content: space-around;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        margin: 0 50px;
     }
 }
 
-/* ========= RESPONSIVE en COMUNES ========= */
-@media screen and (max-width:320px) {
-    .tituloComunes {
-        @include parrafo;
+@media screen and (min-width: 1024px){
+    //INDEX
+    .flex-container-index{
+        flex-wrap: nowrap;
+    }
+
+    .titlesComunes{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .parrafo{
+        margin: 10px 60px;
+    }
+
+    .flex-container-importantes{
+        flex-wrap: nowrap;
     }
 }
 
-@media screen and (max-width:576px) {
-    .tituloComunes{ 
-        font-size: 28px;
-    }
-}
-
-/* ========= RESPONSIVE en CULTIVOS ========= */
-@media screen and (max-width: 320px) {
-    .primero {
-        @include parrafo;
-    } 
-}
-
-@media screen and (min-width: 500px) {
-    .flex-container-cultivo {
-        margin: 0px;
-        grid-template-columns: 1fr;
-    }
-    .nav ul {
-        display: flex;
-        justify-content: space-between;
-    }
-    .container-fluid {
-        justify-content: center;
-    }
-} 
-
-@media screen and (min-width:786px) {
-    .nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: stretch;
-        border: 5px solid black;
-        margin: auto;
-    }
-    .container-fluid {
-        background-color: rgb(167, 211, 219);
-        max-height: 700px;
-        margin: 0 auto;
-        max-width: 100%;
-        height: auto;
-    }
-    .flex-container-cultivo {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: stretch;
-        margin: 5px;
-    }
-}
-
-@media screen and (min-width:1400px) {
-    .flex-container-cultivo {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin: 10px
-    }
-    .container-fluid {
-        margin: 5px;
-        padding: 5px;
-
-        background-color: #dcf9e4;
-    }
-    .footer {
-        padding: 0px;
-        margin: 0px;
-    }
-}
-
-/* ========= RESPONSIVE de  HISTORIA ========= */
-@media screen and (max-width:320px) {
-    .gridHistoria {
-        width: 80%;
-        grid-template-columns: 1fr;
-    }
-    .primero {
-        @include parrafo;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .gridHistoria {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .gridHistoria {
-        grid-template-columns: 1fr;
-        justify-content: center;
-        align-items: center;
-        align-self: center;
-    }
-    .flex-container-historia {
-        margin-top: 10px;
-    }
-}
-
-/* ========= RESPONSIVE de IMPORTANTES ========= */
-@media screen and (max-width: 320px) {
-    .animatedText {
-        font-size: 30px;
-        flex-direction: column;
-    }
-    .flex-container-importantes {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .flex-container-importantes {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .flex-container-importantes {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .flex-container-importantes {
-        flex-direction: column;
+@media screen and (min-width: 1440px){
+    main{
+        margin: 20px 120px;
     }
 }
